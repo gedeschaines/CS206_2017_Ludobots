@@ -60,14 +60,14 @@ xmax = float(int(np.amax(genomes[0,:])*10))/10.0 + 1.0
 ymin = float(int(np.amin(fitness[0,:])*10))/10.0 - 1.0
 ymax = float(int(np.amax(fitness[0,:])*10))/10.0 + 1.0
  
-fig1 = plt.figure(1, figsize=(8, 6))
-fig1.suptitle('Hill Climber Single Sensor Project', fontsize=15)
-panel1 = fig1.add_subplot(111)
-panel1.set_xlabel('Genome')
-panel1.set_ylabel('Fitness')
-panel1.set_xlim(xmin, xmax)
-panel1.set_ylim(ymin, ymax)
-panel1.plot(genomes[0,:], fitness[0,:], '.r')
+fig = plt.figure(1, figsize=(8, 6))
+fig.suptitle('Hill Climber Single Sensor Project', fontsize=15)
+panel = fig.add_subplot(111)
+panel.set_xlabel('Genome')
+panel.set_ylabel('Fitness')
+panel.set_xlim(xmin, xmax)
+panel.set_ylim(ymin, ymax)
+panel.plot(genomes[0,:], fitness[0,:], '.r')
 plt.show()
 
 # Evolution of maximum fitness.
@@ -82,13 +82,14 @@ for i in range(1,nlim):
 ymin = float(int(np.amin(fitness[0,:])*10))/10.0 - 1.0
 ymax = float(int(np.amax(fitness[0,:])*10))/10.0 + 1.0
 
-fig2 = plt.figure(2, figsize=(8, 6))
-fig2.suptitle('Hill Climber Single Sensor Project', fontsize=15)
-panel2 = fig2.add_subplot(111)
-panel2.set_xlabel('Iteration')
-panel2.set_ylabel('Maximum Fitness')
-panel2.set_xlim(0, nlim)
-panel2.set_ylim(ymin, ymax)
-panel2.plot(n[0:], fitness[0,:], '-r')
-panel2.plot([nmax,nmax],[ymin,ymax], '-b')
+fig = plt.figure(2, figsize=(8, 6))
+fig.suptitle('Hill Climber Single Sensor Project', fontsize=15)
+panel = fig.add_subplot(111)
+panel.set_xlabel('Iteration')
+panel.set_ylabel('Maximum Fitness')
+panel.set_xlim(0, nlim)
+panel.set_ylim(ymin, ymax)
+panel.plot(n[0:], fitness[0,:], '-r')
+panel.plot([nmax,nmax],[ymin,ymax], '-b')
+plt.savefig("hillclimber1_max_fitness.png", format='png')
 plt.show()
