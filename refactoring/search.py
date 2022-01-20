@@ -15,3 +15,4 @@ for i in range(0,10):
     sim.start()
     sim.wait_to_finish()
     del robot
+    del sim
