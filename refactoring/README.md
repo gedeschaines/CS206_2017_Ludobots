@@ -1,7 +1,7 @@
 ## Refactoring and Random Search
 
 <p align="center">
-<img src="./eng_drawing.png" width="460" height="332" alt="Engineering Diagram">
+ <img src="./eng_drawing.png" width="460" height="332" alt="Engineering Diagram"/>
 </p>
 
 ### Pyrosim Project Executables
