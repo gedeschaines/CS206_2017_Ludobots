@@ -1,5 +1,5 @@
 #!/usr/bin/env python2
-""" CS206 Spring 2017 ludobots -- Projects Quadruped Parallel Hill Climber
+""" CS206 Spring 2017 ludobots -- Project Quadruped Parallel Hill Climber
     https://www.reddit.com/r/ludobots/wiki/pyrosim/parallelhillclimber
     https://www.reddit.com/r/ludobots/wiki/pyrosim/quadruped
 """

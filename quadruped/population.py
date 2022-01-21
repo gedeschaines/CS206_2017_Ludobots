@@ -1,4 +1,4 @@
-""" CS206 Spring 2017 ludobots -- Projects Quadrupe Parallel Hill Climber
+""" CS206 Spring 2017 ludobots -- Project Quadrupe Parallel Hill Climber
     https://www.reddit.com/r/ludobots/wiki/pyrosim/hillclimber
     https://www.reddit.com/r/ludobots/wiki/pyrosim/parallelhillclimber
     https://www.reddit.com/r/ludobots/wiki/pyrosim/quadruped
