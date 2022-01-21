@@ -39,7 +39,7 @@ The above thirteen Ludobots Pyrosim projects are allocated to this repository's 
     +- synapses: project 6
     +- refactoring: projects 7 & 8
     +- hillclimbers: projects 9 & 10
-    +- quadruped: project 11
+    +- quadruped: projects 11 & 12
 
 In general, each project is allocated to a corespondingly named directory except for random search and the parallel hill climber projects. The random search project program extends the refactoring project search program and utilizes the same ROBOT class. The parallel hill climber project program extends the hill climber project program and utilizes the same ROBOT and INDIVIDUAL classes. The configuration of each project source code represents that which generates a project's final work product. For projects with work products demonstrating incremental development of Ludobots Pyrosim virtual robot design features and functional capabilities, the associated program may contain variables to selectively activate the features and capabilites.
 

@@ -26,6 +26,7 @@ popSize = 10
 fitness = np.ndarray((glim,popSize))
 
 parents = POPULATION(popSize)
+parents.Initialize()
 parents.Evaluate(tlim, parent_blind_play)
 print 0,
 parents.Print()

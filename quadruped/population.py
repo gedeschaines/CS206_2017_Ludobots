@@ -8,15 +8,18 @@ from individual import INDIVIDUAL
 class POPULATION:
     
     def __init__(self, popSize):
+        self.popSize = popSize
         self.p = {}
-        for i in  range(0,popSize):
-            self.p[i] = INDIVIDUAL(i)
     
     def Print(self):
         for i in self.p:
             self.p[i].Print()
         print
-            
+
+    def Initialize(self):
+        for i in  range(0,self.popSize):
+            self.p[i] = INDIVIDUAL(i)
+
     def Evaluate(self, tlim, parent_blind_play):
         for i in self.p:
             self.p[i].Start_Evaluation(tlim, parent_blind_play)
