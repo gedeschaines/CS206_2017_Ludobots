@@ -1,7 +1,7 @@
 ## Hill Climber and Parallel Hill Climber
 
 _|_
-<img src="./eng_drawing.png" width="460" height="332" alt="Engineering Diagram"/>|<img src="./eng_drawing_ANN.png" width="460" height="332" alt="Engineering Diagram"/>
+<img src="./eng_drawing.png" width="460" height="332" alt="Single Sensor Virtual Robot Engineering Diagram"/>|<img src="./eng_drawing_ANN.png" width="460" height="332" alt="Four Sensor Virtual Robot Engineering Diagram"/>
 
 ### Pyrosim Project Executables
 
