@@ -15,7 +15,7 @@ print_iteration_history = False
 save_best_individual = False
 random_seed = 21212121
 
-tlim = 1000  # upper limit of simulaiton time steps
+tlim = 1000  # upper limit of simulation time steps
 nlim = 1001  # upper limit of individual iterations
 n = [i for i in range(0,nlim)]
 

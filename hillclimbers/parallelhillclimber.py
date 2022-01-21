@@ -13,7 +13,7 @@ parent_blind_play = False
 save_best_individual = True
 random_seed = 21212121
 
-tlim = 800  # upper limit of simulaiton time steps
+tlim = 800  # upper limit of simulation time steps
 glim = 100  # upper limit of generation iterations
 grng = [i for i in range(0,glim)]
 
@@ -69,6 +69,6 @@ panel.set_ylim(ymin, ymax)
 for p in range(0,popSize):
     panel.plot(grng[0:], fitness[:,p], linestyle='solid', color=pcols[p], label=str(p))
     panel.plot([gmax[0,p],gmax[0,p]],[ymin,ymax], linestyle='dotted', color=pcols[p])
-panel.legend(loc='lower center', title='ID', frameon=False)
+panel.legend(loc='lower left', title='ID', frameon=False)
 plt.savefig("parallelhillclimber_max_fitness.png", format='png')
 plt.show()
