@@ -1,6 +1,5 @@
 #!/usr/bin/env python2
-""" CS206 Spring 2017 ludobots -- Projects Parallel Hill Climber Search & 
-                                  Quadruped
+""" CS206 Spring 2017 ludobots -- Projects Parallel Hill Climber Search
 """
 from population import POPULATION
 from copy import deepcopy
@@ -46,7 +45,8 @@ if save_best_individual:
     f = open('robot.p', 'w')
     pickle.dump(best_p, f)
     f.close()
-    # Evolution of maximum fitness.
+
+# Evolution of maximum fitness.
 
 gmax = np.zeros((1,popSize))
 for g in range(1, glim):
