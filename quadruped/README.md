@@ -5,6 +5,6 @@ _|_
 
 ### Pyrosim Project Executables
 
-1. The Python program **parallelhillclimber.py** file incorporates a virtual quadruped robot with a 32 synapse ANN depicted in the above images and utilizes the paralled hill climber algorithm detailed in the Ludobots Pyrosim project: [The quadruped](https://www.reddit.com/r/ludobots/wiki/pyrosim/quadruped).
+1. The Python program **parallelhillclimber.py** file incorporates a virtual quadruped robot with an artificial neural network (ANN) composed of 32 synapses (eight synapses from each of four touch sensor neurons to each of eigth motor neurons) as depicted in the above images, and utilizes the paralled hill climber algorithm detailed in the Ludobots Pyrosim project: [The quadruped](https://www.reddit.com/r/ludobots/wiki/pyrosim/quadruped).
 2. The Python program **playback.py** file can load a Python pickle 'robot.p' file output by the quadruped parallel hill climber program.
 
