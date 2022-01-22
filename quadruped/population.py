@@ -4,6 +4,8 @@
     https://www.reddit.com/r/ludobots/wiki/pyrosim/quadruped
 """
 from individual import INDIVIDUAL
+import copy
+import random
 
 class POPULATION:
     
@@ -34,7 +36,35 @@ class POPULATION:
         for i in self.p:
             if ( self.p[i].fitness < other.p[i].fitness ):
                 self.p[i] = other.p[i]
-    
+
+    def Fill_From(self, other):
+        self.Copy_Best_From(other)
+        self.Collect_Children_From(other)
+
+    def Copy_Best_From(self, other):
+        best_fitness = -99999.0
+        for i in other.p:
+            if ( other.p[i].fitness > best_fitness ):
+                best_fitness = other.p[i].fitness
+                best_i = i
+        self.p[0] = copy.deepcopy(other.p[best_i])
+
+    def Collect_Children_From(self, other):
+        for j in range(1, self.popSize):
+            winner = self.Winner_Of_Tournament_Selection(other)
+            self.p[j] = copy.deepcopy(winner)
+            self.p[j].Mutate()
+
+    def Winner_Of_Tournament_Selection(self, other):
+        p1 = random.randint(0, other.popSize-1)
+        p2 = p1
+        while p2 == p1:
+            p2 = random.randint(0, other.popSize-1)
+        if other.p[p1].fitness > other.p[p2].fitness:
+            return other.p[p1]
+        else:
+            return other.p[p2]
+
     def BestIndividual(self):
         best_fitness = -99999.0
         for i in self.p:
