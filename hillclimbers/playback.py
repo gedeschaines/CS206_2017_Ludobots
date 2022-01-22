@@ -8,7 +8,7 @@ import pickle
 f = open('robot.p', 'r')
 best = pickle.load(f)
 f.close()
-best.Evaluate(best.tlim, False)
+best.Evaluate(best.tlim, False, True)
 if len(best.genome) == 4:
     print("[id: %d] [genome: %12.8f %12.8f %12.8f %12.8f] [fitness: %9.5f]" % \
           (best.ID,best.genome[0],best.genome[1],best.genome[2],best.genome[3],best.fitness))

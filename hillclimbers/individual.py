@@ -22,9 +22,9 @@ class INDIVIDUAL:
     def Print(self):
         print '[', self.ID, self.fitness, ']',
     
-    def Evaluate(self, tlim, pb):
+    def Evaluate(self, tlim, pb=False, pp=False):
         self.tlim = tlim
-        sim = pyrosim.Simulator( play_paused=False, eval_time=tlim, play_blind=pb,
+        sim = pyrosim.Simulator( play_paused=pp, eval_time=tlim, play_blind=pb,
                                  xyz=[3, -3, 2], hpr=[135, -10, 0], use_textures=False )
         robot = ROBOT(sim, self.genome)
         sim.start()
@@ -35,9 +35,9 @@ class INDIVIDUAL:
         sensorP4data_y = sim.get_sensor_data( sensor_id=robot.P4, svi=1 )
         self.fitness = sensorP4data_y[-1]
         
-    def Start_Evaluation(self, tlim, pb):
+    def Start_Evaluation(self, tlim, pb=False, pp=False):
         self.tlim = tlim
-        self.sim = pyrosim.Simulator( play_paused=False, eval_time=tlim, play_blind=pb)
+        self.sim = pyrosim.Simulator( play_paused=pp, eval_time=tlim, play_blind=pb)
         self.robot = ROBOT(self.sim, self.genome)
         self.sim.start()
     

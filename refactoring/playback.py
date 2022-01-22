@@ -8,5 +8,5 @@ import pickle
 f = open('robot.p', 'r')
 best = pickle.load(f)
 f.close()
-best.Evaluate(best.tlim, False)
+best.Evaluate(best.tlim, False, True)
 print("[genome: %12.8f] [fitness: %9.5f]" % (best.genome,best.fitness))

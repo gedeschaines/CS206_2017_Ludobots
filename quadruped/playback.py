@@ -10,5 +10,5 @@ import pickle
 f = open('robot.p', 'r')
 best = pickle.load(f)
 f.close()
-best.Evaluate(best.tlim, False)
+best.Evaluate(best.tlim, False, True)
 print("[id: %d] [fitness: %9.5f]" % (best.ID, best.fitness))
