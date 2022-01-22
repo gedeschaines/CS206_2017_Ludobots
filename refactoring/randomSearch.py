@@ -5,8 +5,10 @@
 from individual import INDIVIDUAL
 import numpy as np
 import matplotlib.pyplot as plt
+import pickle
 
 play_blind = True
+save_best_individual = True
 
 tlim = 1000  # upper limit of simulation time steps
 nlim = 1001  # upper limit of individual iterations
@@ -15,16 +17,36 @@ n = [i for i in range(nlim)]
 genomes = np.ndarray((1,nlim))
 fitness = np.ndarray((1,nlim))
 
-print(" i      Genome       Fitness ")
-print("---  ------------  ----------")
+# Random Search to find an individual with the best fitness.
+
+best_fitness = -99999.0
+
+print("  i      Genome       Fitness ")
+print("----  ------------  ----------")
+
 for i in range(0,nlim):
     individual = INDIVIDUAL()
     individual.Evaluate(tlim, play_blind)
     genomes[0,i] = individual.genome
     fitness[0,i] = individual.fitness
     print("%3d  %12.8f  %9.5f" % (i,genomes[0,i],fitness[0,i]))
+    if fitness[0,i] > best_fitness:
+        best_genome  = genomes[0,i]
+        best_fitness = fitness[0,i]
     del individual
-    
+
+print("----  ------------  ----------")
+print("best  %12.8f  %9.5f" % (best_genome,best_fitness))
+
+if save_best_individual:
+    f = open('robot.p', 'w')
+    individual = INDIVIDUAL(best_genome)
+    individual.Evaluate(tlim, play_blind)
+    pickle.dump(individual, f)
+    f.close()
+
+# Searched points in fitness landscape.
+
 xmin = float(int(np.amin(genomes[0,:])*10))/10.0 - 1.0 
 xmax = float(int(np.amax(genomes[0,:])*10))/10.0 + 1.0  
 ymin = float(int(np.amin(fitness[0,:])*10))/10.0 - 1.0

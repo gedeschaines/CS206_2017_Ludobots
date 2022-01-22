@@ -8,14 +8,17 @@ import math
 
 class INDIVIDUAL:
     
-    def __init__(self):
-        self.genome = random.random()*2.0 - 1.0
+    def __init__(self, genome=None):
+        if genome is None:
+            self.genome = random.random()*2.0 - 1.0
+        else:
+            self.genome = genome
         self.fitness = 0.0
         self.tlim = 0
     
     def Evaluate(self, tlim, pb=False):
         self.tlim = tlim
-        sim = pyrosim.Simulator( play_paused=False, eval_time=tlim, play_blind=pb)
+        sim = pyrosim.Simulator( play_paused=False, eval_time=tlim, play_blind=pb )
         robot = ROBOT(sim, self.genome)
         sim.start()
         sim.wait_to_finish()
