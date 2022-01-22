@@ -3,7 +3,6 @@
     https://www.reddit.com/r/ludobots/wiki/pyrosim/hillclimber
     https://www.reddit.com/r/ludobots/wiki/pyrosim/parallelhillclimber
 """
-from individual import INDIVIDUAL
 import pickle
 
 f = open('robot.p', 'r')
