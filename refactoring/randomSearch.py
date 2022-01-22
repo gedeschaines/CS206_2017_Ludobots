@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 
 play_blind = True
 
-tlim = 500
-nlim = 1001
+tlim = 1000  # upper limit of simulation time steps
+nlim = 1001  # upper limit of individual iterations
 n = [i for i in range(nlim)]
 
 genomes = np.ndarray((1,nlim))

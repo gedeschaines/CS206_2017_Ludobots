@@ -13,7 +13,7 @@ class INDIVIDUAL:
         self.fitness = 0.0
         self.tlim = 0
     
-    def Evaluate(self, tlim, pb):
+    def Evaluate(self, tlim, pb=False):
         self.tlim = tlim
         sim = pyrosim.Simulator( play_paused=False, eval_time=tlim, play_blind=pb)
         robot = ROBOT(sim, self.genome)
