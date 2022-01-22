@@ -62,7 +62,7 @@ pcols = ['red', 'green', 'blue', 'cyan', 'magenta']
 fig = plt.figure(1, figsize=(8, 6))
 fig.suptitle('Parallel Hill Climber Four Sensors Project', fontsize=15)
 panel = fig.add_subplot(111)
-panel.set_xlabel('Iteration')
+panel.set_xlabel('Generation')
 panel.set_ylabel('Maximum Fitness')
 panel.set_xlim(0, glim)
 panel.set_ylim(ymin, ymax)
