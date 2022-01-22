@@ -22,9 +22,9 @@ class POPULATION:
         for i in  range(0,self.popSize):
             self.p[i] = INDIVIDUAL(i)
 
-    def Evaluate(self, tlim, parent_blind_play):
+    def Evaluate(self, tlim, parent_blind_play, pp=False):
         for i in self.p:
-            self.p[i].Start_Evaluation(tlim, parent_blind_play)
+            self.p[i].Start_Evaluation(tlim, parent_blind_play, pp)
         for i in self.p:
             self.p[i].Compute_Fitness()
             
