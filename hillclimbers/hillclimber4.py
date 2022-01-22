@@ -65,7 +65,7 @@ ymin = float(int(np.amin(fitness[:,0])*10))/10.0 - 1.0
 ymax = float(int(np.amax(fitness[:,0])*10))/10.0 + 1.0
  
 fig = plt.figure(1, figsize=(8, 6))
-fig.suptitle('Hill Climber Four Sensors Project', fontsize=15)
+fig.suptitle('Hill Climber Four Sensors Project - Fitness Landscape', fontsize=15)
 panel = fig.add_subplot(111)
 panel.set_xlabel('Genomes -- Synapse Weights')
 panel.set_ylabel('Fitness')
@@ -76,6 +76,7 @@ panel.plot(genomes[:,1], fitness[:,0], '.r', label='w1,4')
 panel.plot(genomes[:,2], fitness[:,0], '.b', label='w2,4')
 panel.plot(genomes[:,3], fitness[:,0], '.g', label='w3,4')
 panel.legend(loc='lower left', title='Genomes', frameon=False)
+plt.savefig("hillclimber4_fitness_landscape.png", format='png')
 plt.show()
 
 # Evolution of maximum fitness.
@@ -91,9 +92,9 @@ ymin = float(int(np.amin(fitness[:,0])*10))/10.0 - 1.0
 ymax = float(int(np.amax(fitness[:,0])*10))/10.0 + 1.0
 
 fig = plt.figure(2, figsize=(8, 6))
-fig.suptitle('Hill Climber Four Sensors Project', fontsize=15)
+fig.suptitle('Hill Climber Four Sensors Project - Maximum Fitness', fontsize=15)
 panel = fig.add_subplot(111)
-panel.set_xlabel('Iteration')
+panel.set_xlabel('Generation')
 panel.set_ylabel('Maximum Fitness')
 panel.set_xlim(0, nlim)
 panel.set_ylim(ymin, ymax)

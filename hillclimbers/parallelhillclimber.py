@@ -60,7 +60,7 @@ ymax = float(int(np.amax(fitness[:,:])*10))/10.0 + 1.0
 pcols = ['red', 'green', 'blue', 'cyan', 'magenta']
 
 fig = plt.figure(1, figsize=(8, 6))
-fig.suptitle('Parallel Hill Climber Four Sensors Project', fontsize=15)
+fig.suptitle('Parallel Hill Climber Four Sensors Project - Maximum Fitness', fontsize=15)
 panel = fig.add_subplot(111)
 panel.set_xlabel('Generation')
 panel.set_ylabel('Maximum Fitness')

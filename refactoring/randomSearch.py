@@ -6,8 +6,10 @@ from individual import INDIVIDUAL
 import numpy as np
 import matplotlib.pyplot as plt
 
+play_blind = True
+
 tlim = 500
-nlim = 10
+nlim = 1001
 n = [i for i in range(nlim)]
 
 genomes = np.ndarray((1,nlim))
@@ -17,7 +19,7 @@ print(" i      Genome       Fitness ")
 print("---  ------------  ----------")
 for i in range(0,nlim):
     individual = INDIVIDUAL()
-    individual.Evaluate(tlim)
+    individual.Evaluate(tlim, play_blind)
     genomes[0,i] = individual.genome
     fitness[0,i] = individual.fitness
     print("%3d  %12.8f  %9.5f" % (i,genomes[0,i],fitness[0,i]))
