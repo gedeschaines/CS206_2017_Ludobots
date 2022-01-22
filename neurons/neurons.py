@@ -41,6 +41,8 @@ ymax = float(int(max(sensorR3data)*10))/10.0 + 1.0
 fig = plt.figure(figsize=(8, 6))
 fig.suptitle('Neurons Project- Red Object Tip +Y Ray Sensor', fontsize=15)
 panel = fig.add_subplot(111)
+panel.set_xlabel('Time Step')
+panel.set_ylabel('Sensor Output')
 panel.set_ylim(-1, ymax)
 plt.plot(t, sensorR3data, color='green', label='R3')
 plt.legend(loc='lower left', title='Sensors', frameon=False)

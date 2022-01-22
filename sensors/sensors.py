@@ -5,7 +5,7 @@
 import pyrosim
 import matplotlib.pyplot as plt
 
-Use_R3tip = False
+Use_R3tip = True
 
 tlim = 100
 t = [i for i in range(0,tlim)]
@@ -46,6 +46,8 @@ ymax = float(int(max(sensorT1data)*10))/10.0 + 1.0
 fig = plt.figure(figsize=(8, 6))
 fig.suptitle('Sensors Project - Red Object Touch Sensor', fontsize=15)
 panel = fig.add_subplot(111)
+panel.set_xlabel('Time Step')
+panel.set_ylabel('Sensor Output')
 panel.set_ylim(ymin, ymax)
 panel.plot(t, sensorT1data, color='red', label='T1')
 panel.legend(loc='lower left', title='Sensor', frameon=False)
@@ -58,6 +60,8 @@ ymax = float(int(max(sensorP2data)*10))/10.0 + 1.0
 fig = plt.figure(figsize=(8, 6))
 fig.suptitle('Sensors Project - Joint Proprioceptive Sensor', fontsize=15)
 panel = fig.add_subplot(111)
+panel.set_xlabel('Time Step')
+panel.set_ylabel('Sensor Output')
 panel.set_ylim(ymin, ymax)
 panel.plot(t, sensorP2data, color='blue', label='P2')
 panel.legend(loc='lower left', title='Sensor', frameon=False)
@@ -79,6 +83,8 @@ ymax = float(int(max(sensorR3data)*10))/10.0 + 1.0
 fig = plt.figure(figsize=(8, 6))
 fig.suptitle(title, fontsize=15)
 panel = fig.add_subplot(111)
+panel.set_xlabel('Time Step')
+panel.set_ylabel('Sensor Output')
 panel.set_ylim(ymin, ymax)
 panel.plot(t, sensorR3data, color='black', label=label)
 panel.legend(loc='lower left', title='Sensor', frameon=False)
@@ -89,6 +95,8 @@ if Use_R3tip:
     fig = plt.figure(figsize=(8, 6))
     fig.suptitle('Sensors Project - T1, P2 & R3 Sensors', fontsize=15)
     panel = fig.add_subplot(111)
+    panel.set_xlabel('Time Step')
+    panel.set_ylabel('Sensor Output')
     panel.set_ylim(-2, ymax)
     panel.plot(t, sensorT1data, color='red', label='T1')
     panel.plot(t, sensorP2data, color='blue', label='P2')
