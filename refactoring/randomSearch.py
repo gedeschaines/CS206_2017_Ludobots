@@ -3,16 +3,21 @@
     https://www.reddit.com/r/ludobots/wiki/pyrosim/randomsearch
 """
 from individual import INDIVIDUAL
+from random import seed
 import numpy as np
 import matplotlib.pyplot as plt
 import pickle
 
 play_blind = True
 save_best_individual = True
+random_seed = 21212121
 
 tlim = 1000  # upper limit of simulation time steps
 nlim = 1001  # upper limit of individual iterations
 n = [i for i in range(nlim)]
+
+if random_seed is not None:
+    seed(random_seed)
 
 genomes = np.ndarray((1,nlim))
 fitness = np.ndarray((1,nlim))
