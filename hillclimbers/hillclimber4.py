@@ -12,8 +12,8 @@ import matplotlib.pyplot as plt
 
 parent_blind_play = True
 print_iteration_history = False
-save_best_individual = False
-random_seed = 21212121
+save_best_individual = True
+random_seed = None
 
 tlim = 1000  # upper limit of simulation time steps
 nlim = 1001  # upper limit of individual iterations
