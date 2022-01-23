@@ -30,7 +30,7 @@ Comparison of maximum fitness plots for 1000 time steps and 1001 generations of 
 ---------------- | ----------------
 <img src="./hillClimber1_max_fitness.png" width="480" height="360" alt="Hill Climber Single Sensor Project - Maximum Fitness Plot"/> | <img src="./hillClimber4_max_fitness.png" width="480" height="360" alt="Hill Climber Four Sensor Project - Maximum Fitness Plot"/>
 
-Simulation of 1000 time steps of best fitness single sensor and four sensor virtual robots utilizing the hill climber algorithm is presented in YouTube videos hyperlinked to the following images.
+Simulation of 1000 time steps of best fitness single sensor and four sensor virtual robots utilizing the hill climber algorithm are presented in YouTube videos hyperlinked to the following images.
 
 **hillClimber1** | **hillClimber4**
 ---------------- | ----------------

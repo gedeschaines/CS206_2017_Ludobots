@@ -16,7 +16,7 @@ Comparison of maximum fitness plots for 500 time steps and 200 generations of th
 ----------------------- | --------------------
 <img src="./parallelHillClimber_max_fitness.png" width="480" height="360" alt="Quadruped Parallel Hill Climber Project - Maximum Fitness Plot"/> | <img src="./geneticAlgorithm_max_fitness.png" width="480" height="360" alt="Quaduped Genetic Algorithm Project - Maximum Fitness Plot"/>
 
-Simulation of 500 time steps for best fitness virtual quadruped robot evolved over 200 generations with parallel hill climber and genetic algorithm are presented in YouTube videos hyperlinked to the following images.
+Simulation of 500 time steps for best fitness virtual quadruped robots evolved over 200 generations with parallel hill climber and genetic algorithm are presented in YouTube videos hyperlinked to the following images.
 
 **parallelHillClimber** | **geneticAlgorithm**
 ----------------------- | --------------------
