@@ -1,7 +1,8 @@
 ## Quadruped Parallel Hill Climber
 
-_|_
-<img src="./kA4oznt.png" width="485" height="416" alt="Quadruped Virtual Robot Engineering Diagram from https://imgur.com/kA4oznt">|<img src="./quadruped.png" width="485" height="416" alt="Virtual Quadruped Robot"/>
+Engineering Diagram & ANN | Pyrosim Quadruped
+------------------------- | -----------------
+<img src="./kA4oznt.png" width="485" height="416" alt="Quadruped Virtual Robot Engineering Diagram from https://imgur.com/kA4oznt"> | <img src="./quadruped.png" width="485" height="416" alt="Virtual Quadruped Robot"/>
 
 ### Pyrosim Project Executables
 

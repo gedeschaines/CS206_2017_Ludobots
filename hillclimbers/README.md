@@ -1,7 +1,7 @@
 ## Hill Climber and Parallel Hill Climber
-
-_|_
-<img src="./eng_drawing.png" width="460" height="332" alt="Single Sensor Virtual Robot Engineering Diagram"/>|<img src="./eng_drawing_ANN.png" width="460" height="332" alt="Four Sensor Virtual Robot Engineering Diagram"/>
+Single Sensor Neural Network | Four Sensor Neural Network
+---------------------------- | --------------------------
+<img src="./eng_drawing.png" width="460" height="332" alt="Single Sensor Virtual Robot Engineering Diagram"/> | <img src="./eng_drawing_ANN.png" width="460" height="332" alt="Four Sensor Virtual Robot Engineering Diagram"/>
 
 ### Pyrosim Project Executables
 
@@ -12,17 +12,26 @@ _|_
 
 ### Notes
 
-Comparison of fitness landscape plots for 1000 time steps and 1001 iterations of a single sensor virtual robot utilizing the random search and hill climber algorithms shown in the following figures.
+Comparison of fitness landscape plots for 1000 time steps and 1001 iterations of a single sensor virtual robot utilizing the random search and hill climber algorithms is presented in the following figures.
 
-_|_
-<img src="../refactoring/randomSearch_fitness_landscape.png" width="480" height="360" alt="Random Search Project - Fitness Landscape Plot"/>|<img src="./hillclimber1_fitness_landscape.png" width="480" height="360" alt="Hill Climber Single Sensor Project - Fitness Landscape Plot"/>
+**randomSearch** | **hillclimber1**
+---------------- | ----------------
+<img src="../refactoring/randomSearch_fitness_landscape.png" width="480" height="360" alt="Random Search Project - Fitness Landscape Plot"/> | <img src="./hillclimber1_fitness_landscape.png" width="480" height="360" alt="Hill Climber Single Sensor Project - Fitness Landscape Plot"/>
 
-Comparison of fitness landscape plots for 1000 time steps and 1001 generations of single sensor and four sensor virtual robots utilizing the the hill climber algorithm shown in the following figures.
+Comparison of fitness landscape plots for 1000 time steps and 1001 generations of single sensor and four sensor virtual robots utilizing the the hill climber algorithm is presented in the following figures.
 
-_|_
-<img src="./hillclimber1_fitness_landscape.png" width="480" height="360" alt="Hill Climber Single Sensor Project - Fitness Landscape Plot"/>|<img src="./hillclimber4_fitness_landscape.png" width="480" height="360" alt="Hill Climber Four Sensor Project - Fitness LandscapePlot"/>
+**hillclimber1** | **hillclimber4**
+---------------- | ----------------
+<img src="./hillclimber1_fitness_landscape.png" width="480" height="360" alt="Hill Climber Single Sensor Project - Fitness Landscape Plot"/> | <img src="./hillclimber4_fitness_landscape.png" width="480" height="360" alt="Hill Climber Four Sensor Project - Fitness LandscapePlot"/>
 
-Comparison of maximum fitness plots for 1000 time steps and 1001 generations of single sensor and four sensor virtual robots utilizing the the hill climber algorithm shown in the following figures.
+Comparison of maximum fitness plots for 1000 time steps and 1001 generations of single sensor and four sensor virtual robots utilizing the the hill climber algorithm is presented in the following figures.
 
-_|_
-<img src="./hillclimber1_max_fitness.png" width="480" height="360" alt="Hill Climber Single Sensor Project - Maximum Fitness Plot"/>|<img src="./hillclimber4_max_fitness.png" width="480" height="360" alt="Hill Climber Four Sensor Project - Maximum Fitness Plot"/>
+**hillclimber1** | **hillclimber4**
+---------------- | ----------------
+<img src="./hillclimber1_max_fitness.png" width="480" height="360" alt="Hill Climber Single Sensor Project - Maximum Fitness Plot"/> | <img src="./hillclimber4_max_fitness.png" width="480" height="360" alt="Hill Climber Four Sensor Project - Maximum Fitness Plot"/>
+
+Simulation of 1000 time steps of best fitness virtual single sensor and four sensor virtual robots utilizing the the hill climber algorithm is presented in YouTube video hyperlinked to the following images.
+
+**hillclimber1** | **hillclimber4**
+---------------- | ----------------
+<a href="https://youtu.be/gY7hJz4Y2k0"><img src="./hillclimber1.jpg" alt="YouTube video of hillclimber1 robot" width="450" height="300"></a> | <a href="https://youtu.be/YqrZcj0Mek8"><img src="./hillclimber4.jpg" alt="YouTube video of hillclimber4 robot" width="450" height="300"></a>
