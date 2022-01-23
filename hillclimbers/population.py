@@ -1,4 +1,4 @@
-""" CS206 Spring 2017 ludobots -- Projects Parallel Hill Climber Search
+""" CS206 Spring 2017 ludobots -- Project Parallel Hill Climber
     https://www.reddit.com/r/ludobots/wiki/pyrosim/parallelhillclimber
 """
 from individual import INDIVIDUAL
