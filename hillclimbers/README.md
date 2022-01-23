@@ -18,7 +18,7 @@ Comparison of fitness landscape plots for 1000 time steps and 1001 iterations of
 ---------------- | ----------------
 <img src="../refactoring/randomSearch_fitness_landscape.png" width="480" height="360" alt="Random Search Project - Fitness Landscape Plot"/> | <img src="./hillclimber1_fitness_landscape.png" width="480" height="360" alt="Hill Climber Single Sensor Project - Fitness Landscape Plot"/>
 
-Comparison of fitness landscape plots for 1000 time steps and 1001 generations of single sensor and four sensor virtual robots utilizing the the hill climber algorithm is presented in the following figures.
+Comparison of fitness landscape plots for 1000 time steps and 1001 generations of single sensor and four sensor virtual robots utilizing the hill climber algorithm is presented in the following figures.
 
 **hillclimber1** | **hillclimber4**
 ---------------- | ----------------
