@@ -35,3 +35,13 @@ Simulation of 1000 time steps of best fitness single sensor and four sensor virt
 **hillClimber1** | **hillClimber4**
 ---------------- | ----------------
 <a href="https://youtu.be/gY7hJz4Y2k0"><img src="./hillClimber1.jpg" alt="YouTube video of hillClimber1 robot" width="450" height="300"></a> | <a href="https://youtu.be/YqrZcj0Mek8"><img src="./hillClimber4.jpg" alt="YouTube video of hillClimber4 robot" width="450" height="300"></a>
+
+Maximum fitness plots for the four sensor virtual robot evolved over 1000 time steps and 1001 generations with hill climber algorithm and over 800 time steps and 100 generations with parallel hill climber algorithm are presented in the following figures.
+
+**hillClimber4** | **parallelhillClimber**
+---------------- | -----------------------
+<img src="./hillClimber4_max_fitness.png" width="480" height="360" alt="Hill Climber Four Sensor Project - Maximum Fitness Plot"/> | <img src="./parallelHillClimber_max_fitness.png" width="480" height="360" alt="Parallel Hill Climber Four Sensor Project - Maximum Fitness Plot"/>
+
+Simulation of 800 time steps of best fitness four sensor virtual robot evolved over 100 generations with parallel hill climber algorithm is presented in YouTube video hyperlinked to the following image.
+
+<a href="https://youtu.be/oVsHU2-FLyA"><img src="./parallelHC4.jpg" alt="YouTube video of parallelHillClimber robot" width="450" height="300"></a>
