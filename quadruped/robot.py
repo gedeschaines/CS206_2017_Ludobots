@@ -87,7 +87,7 @@ class ROBOT:
         SN3 = sim.send_sensor_neuron( sensor_id=self.S[3] )
         self.SN = {0:SN0, 1:SN1, 2:SN2, 3:SN3}
         # joint motor neurons
-        tau = 1.0
+        tau = 0.5
         MN4 = sim.send_motor_neuron( joint_id=self.J[0], tau=tau )
         MN5 = sim.send_motor_neuron( joint_id=self.J[1], tau=tau )
         MN6 = sim.send_motor_neuron( joint_id=self.J[2], tau=tau )

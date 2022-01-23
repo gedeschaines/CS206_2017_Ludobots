@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 
 parent_blind_play = True
 save_best_individual = True
-random_seed = 987654321
+random_seed = 87654321
 
 tlim = 500  # upper limit of simulation time steps
 glim = 200  # upper limit of generation iterations
