@@ -73,5 +73,5 @@ for p in range(0,popSize):
     panel.plot(grng[0:], fitness[:,p], linestyle='solid', color=pcols[p], label=str(p))
     panel.plot([gmax[0,p],gmax[0,p]],[ymin,ymax], linestyle='dotted', color=pcols[p])
 panel.legend(loc='lower left', title='ID', frameon=False)
-plt.savefig("parallelhillclimber_max_fitness.png", format='png')
+plt.savefig("parallelHillClimber_max_fitness.png", format='png')
 plt.show()
