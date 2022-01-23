@@ -1,5 +1,5 @@
 #!/usr/bin/env python2
-""" CS206 Spring 2017 ludobots -- Project Hill Climber Search (1 Sensor)
+""" CS206 Spring 2017 ludobots -- Project Hill Climber (1 Sensor)
     https://www.reddit.com/r/ludobots/wiki/pyrosim/hillclimber
 """
 from individual import INDIVIDUAL
@@ -68,7 +68,7 @@ panel.set_ylabel('Fitness')
 panel.set_xlim(xmin, xmax)
 panel.set_ylim(ymin, ymax)
 panel.plot(genomes[0,:], fitness[0,:], '.r')
-plt.savefig("hillclimber1_fitness_landscape.png", format='png')
+plt.savefig("hillClimber1_fitness_landscape.png", format='png')
 plt.show()
 
 # Evolution of maximum fitness.
@@ -92,5 +92,5 @@ panel.set_xlim(0, nlim)
 panel.set_ylim(ymin, ymax)
 panel.plot(n[0:], fitness[0,:], '-r')
 panel.plot([nmax,nmax],[ymin,ymax], '-b')
-plt.savefig("hillclimber1_max_fitness.png", format='png')
+plt.savefig("hillClimber1_max_fitness.png", format='png')
 plt.show()

@@ -1,5 +1,5 @@
 #!/usr/bin/env python2
-""" CS206 Spring 2017 ludobots -- Project Hill Climber Search
+""" CS206 Spring 2017 ludobots -- Projects Hill Climber and Parallel HillClimber
     https://www.reddit.com/r/ludobots/wiki/pyrosim/hillclimber
     https://www.reddit.com/r/ludobots/wiki/pyrosim/parallelhillclimber
 """

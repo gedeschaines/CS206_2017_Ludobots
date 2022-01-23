@@ -1,5 +1,6 @@
 #!/usr/bin/env python2
-""" CS206 Spring 2017 ludobots -- Projects Parallel Hill Climber Search
+""" CS206 Spring 2017 ludobots -- Project Parallel Hill Climber
+    https://www.reddit.com/r/ludobots/wiki/pyrosim/parallelhillclimber
 """
 from population import POPULATION
 from copy import deepcopy
@@ -70,5 +71,5 @@ for p in range(0,popSize):
     panel.plot(grng[0:], fitness[:,p], linestyle='solid', color=pcols[p], label=str(p))
     panel.plot([gmax[0,p],gmax[0,p]],[ymin,ymax], linestyle='dotted', color=pcols[p])
 panel.legend(loc='lower left', title='ID', frameon=False)
-plt.savefig("parallelhillclimber_max_fitness.png", format='png')
+plt.savefig("parallelHillClimber_max_fitness.png", format='png')
 plt.show()
