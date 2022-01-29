@@ -38,7 +38,7 @@ Simulation of 1000 time steps of best fitness single sensor and four sensor virt
 
 Maximum fitness plots for the four sensor virtual robot evolved over 1000 time steps and 1001 generations with hill climber algorithm and over 800 time steps and 100 generations with parallel hill climber algorithm are presented in the following figures.
 
-**hillClimber4** | **paralleHhillClimber**
+**hillClimber4** | **parallelHillClimber**
 ---------------- | -----------------------
 <img src="./hillClimber4_max_fitness.png" width="480" height="360" alt="Hill Climber Four Sensor Project - Maximum Fitness Plot"/> | <img src="./parallelHillClimber_max_fitness.png" width="480" height="360" alt="Parallel Hill Climber Four Sensor Project - Maximum Fitness Plot"/>
 
