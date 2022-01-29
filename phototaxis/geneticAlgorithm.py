@@ -64,7 +64,7 @@ pcols = ['red', 'green', 'blue', 'cyan', 'magenta', 'orange', 'yellow', 'brown',
          'red', 'green', 'blue', 'cyan', 'magenta', 'orange', 'yellow', 'brown', 'gray', 'black']
 
 fig = plt.figure(1, figsize=(8, 6))
-fig.suptitle('Quadruped Genetic Algorithm Project - Maximum Fitness', fontsize=15)
+fig.suptitle('Phototaxis Quadruped Genetic Algorithm Project - Maximum Fitness', fontsize=15)
 panel = fig.add_subplot(111)
 panel.set_xlabel('Generation')
 panel.set_ylabel('Maximum Fitness')
@@ -74,5 +74,5 @@ for p in range(0,c.popSize):
     panel.plot(grng[0:], fitness[:,p], linestyle='solid', color=pcols[p], label=str(p))
     panel.plot([gmax[0,p],gmax[0,p]],[ymin,ymax], linestyle='dotted', color=pcols[p])
 panel.legend(loc='lower left', title='ID', frameon=False)
-plt.savefig("geneticAlgorithm_max_fitness.png", format='png')
+plt.savefig("phototaxisQuadGA_max_fitness.png", format='png')
 plt.show()
