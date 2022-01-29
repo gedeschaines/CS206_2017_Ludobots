@@ -10,6 +10,8 @@ Engineering Diagram & ANN | Pyrosim Quadruped
 2. The Python program **geneticAlgorithm.py** simulates the same virtual quadruped robot and ANN as **parallelHillClimber.py**, but utilizes the genetic algorithm detailed in Pyrosim project: [The genetic algorithm](https://www.reddit.com/r/ludobots/wiki/pyrosim/geneticalgorithm)
 3. The Python program **playback.py** can load a Python pickle 'robot.p' file output by the quadruped parallel hill climber and genetic algorithm programs.
 
+### Simulation Results
+
 Comparison of maximum fitness plots for 500 time steps and 200 generations of the virtual quadruped robots utilizing the parallel hill climber and genetic algorithm is presented in the following figures.
 
 **parallelHillClimber** | **geneticAlgorithm**
