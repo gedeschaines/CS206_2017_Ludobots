@@ -12,6 +12,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 parent_blind_play = True
+show_best_individual = False
 save_best_individual = True
 random_seed = 87654321
 
@@ -42,6 +43,11 @@ for g in range(1,c.numGens):
     children.Print()
     parents.ReplaceWith(children)
     fitness[g, 0:] = [parents.p[i].fitness for i in range(c.popSize)]
+
+if show_best_individual:
+   best_p = parents.p[0]
+   for e in envs.envs:
+       best_p.Evaluate(envs.envs[e], True, False)
 
 if save_best_individual:
     best_p = parents.BestIndividual()
