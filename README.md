@@ -46,7 +46,7 @@ In general, each project is allocated to a corespondingly named directory except
 
 ### Notes
 
-1. Deliverable work products for most of the CS206 Ludobots Pyrosim projects  include an engineering diagram depicting a notional robot design, and as such the free software diagramming tool [**Dia**](https://wiki.gnome.org/action/show/Apps/Dia?action=show&redirect=Dia) was used to create engineering diagram PNG image 'eng_diagram.png' files exported from a single 'eng_diagram.dia' worksheet by utilizing **Dia** layering capabilities.
+1. Deliverable work products for most of the CS206 Ludobots Pyrosim projects  include an engineering diagram depicting a notional robot design, and as such the free software diagramming tool [**Dia**](https://wiki.gnome.org/action/show/Apps/Dia?action=show&redirect=Dia) was used to create engineering diagram PNG image 'eng_drawing.png' files exported from a single 'eng_drawing.dia' worksheet by utilizing **Dia** layering capabilities.
 2. For projects with screenshot or graph plot image work products, the associated program incorporates automatic generation of the image when possible.
 3. If present, refer to a project's README file for development and execution details not explicitly addressed in the Ludobots Pyrosim project instructions provided at the corresponding Reddit web page (see Reddit links section above).
 

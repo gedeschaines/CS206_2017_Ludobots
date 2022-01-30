@@ -2,7 +2,7 @@
 
 Engineering Diagram & ANN | Pyrosim Quadruped
 ------------------------- | -----------------
-<img src="../quadruped/kA4oznt.png" width="485" height="416" alt="Quadruped Virtual Robot Engineering Diagram from https://imgur.com/kA4oznt"> | <img src="../quadruped/quadruped.png" width="485" height="416" alt="Virtual Phototaxis Quadruped Robot"/>
+<img src="./eng_drawing_quad.png" width="485" height="416" alt="Quadruped Virtual Robot Engineering Diagram from https://imgur.com/kA4oznt"> | <img src="./quadruped.png" width="485" height="416" alt="Virtual Phototaxis Quadruped Robot"/>
 
 ### Pyrosim Project Executables
 
