@@ -20,7 +20,8 @@ class INDIVIDUAL:
 
     def Evaluate(self, env, pp=False, pb=True):
         sim = pyrosim.Simulator( play_paused=pp, eval_time=c.evalTime, play_blind=pb,
-                                 xyz=[0, 0, 20], hpr=[90, -90, 0], use_textures=False )
+                                 xyz=[0, 0, 1.5*c.D], hpr=[90, -90, 0], use_textures=False,
+                                 window_size=(800, 800) )
         robot = ROBOT(sim, self.genome)
         env.Send_To(sim)
         sim.start()
@@ -32,7 +33,8 @@ class INDIVIDUAL:
 
     def Start_Evaluation(self, env, pp=False, pb=True):
         self.sim = pyrosim.Simulator( play_paused=pp, eval_time=c.evalTime, play_blind=pb,
-                                      xyz=[0, 0, 20], hpr=[90, -90, 0], use_textures=False )
+                                      xyz=[0, 0, 1.5*c.D], hpr=[90, -90, 0], use_textures=False,
+                                      window_size=(800, 800) )
         self.robot = ROBOT(self.sim, self.genome)
         env.Send_To( self.sim )
         self.sim.start()
