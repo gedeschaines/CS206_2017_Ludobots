@@ -22,5 +22,7 @@ Simulations of 2000 time steps for best fitness virtual phototaxis quadruped rob
 **Light Source to the Front** | **Light Source to the Right**
 ----------------------------- | -----------------------------
 <a href="https://youtu.be/KI8k_nECe90"><img src="./phototaxisQuadGA_Front.jpg" alt="YouTube video of genetic algorithm evolved phototaxis quadruped robot reacting to light source to the front" width="450" height="300"></a> | <a href="https://youtu.be/MAgpncwxb2I"><img src="./phototaxisQuadGA_Right.jpg" alt="YouTube video of genetic algorithm evolved phototaxis quadruped robot reacting to light source to the right" width="450" height="300"></a>
+
 **Light Source to the Back** | **Light Source to the Left**
+---------------------------- | ----------------------------
 <a href="https://youtu.be/fgSBssf5JMg"><img src="./phototaxisQuadGA_Back.jpg" alt="YouTube video of genetic algorithm evolved phototaxis quadruped robot reacting to light source to the back" width="450" height="300"></a> | <a href="https://youtu.be/Sd6LiF_WxzE"><img src="./phototaxisQuadGA_Left.jpg" alt="YouTube video of genetic algorithm evolved phototaxis quadruped robot reacting to light source to the left" width="450" height="300"></a>
