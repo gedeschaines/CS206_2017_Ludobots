@@ -31,16 +31,16 @@ The first seven Ludobots Pyrosim projects involve incrementally designing, devel
 
 The above thirteen Ludobots Pyrosim projects are allocated to this repository's subdirectories as denoted in the following list.
 
-+- [simulation](./simulation): project 1
-+- [objects](./objects): project 2
-+- [joints](./joints): project 3
-+- [sensors](./sensors): project 4
-+- [neurons](./neurons): project 5
-+- [synapses](./synapses): project 6
-+- [refactoring](./refactoring): projects 7 & 8
-+- [hillclimbers](./hillclimbers): projects 9 & 10
-+- [quadruped](./quadruped): projects 11 & 12
-+- [phototaxis](./phototaxis): project 13
+  + [simulation](./simulation): project 1  
+  + [objects](./objects): project 2  
+  + [joints](./joints): project 3  
+  + [sensors](./sensors): project 4  
+  + [neurons](./neurons): project 5  
+  + [synapses](./synapses): project 6  
+  + [refactoring](./refactoring): projects 7 & 8  
+  + [hillclimbers](./hillclimbers): projects 9 & 10  
+  + [quadruped](./quadruped): projects 11 & 12  
+  + [phototaxis](./phototaxis): project 13  
 
 In general, each project is allocated to a correspondingly named directory except for random search, the parallel hill climber and genetic algorithm projects. The random search project program extends the refactoring project search program and utilizes the same ROBOT class. The parallel hill climber project program extends the hill climber project program and utilizes the same ROBOT and INDIVIDUAL classes. The genetic algorithm project program extends the quadruped parallel hill climber project program and utilizes the same ROBOT, INDIVIDUAL and POPULATION classes. The configuration of each project source code represents that which generates a project's final work product. For projects with work products demonstrating incremental development of Ludobots Pyrosim virtual robot design features and functional capabilities, the associated program may contain variables to selectively activate the features and capabilites.
 
