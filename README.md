@@ -16,7 +16,7 @@ Ludobots Pyrosim project instructions for the CS206 course are provided on Reddi
 7. [Refactoring](https://www.reddit.com/r/ludobots/wiki/pyrosim/refactoring)
 8. [Random search](https://www.reddit.com/r/ludobots/wiki/pyrosim/randomsearch)
 9. [The hill climber](https://www.reddit.com/r/ludobots/wiki/pyrosim/hillclimber)
-0. [The parallel hill climber](https://www.reddit.com/r/ludobots/wiki/pyrosim/parallelhillclimber)
+10. [The parallel hill climber](https://www.reddit.com/r/ludobots/wiki/pyrosim/parallelhillclimber)
 11. [The quadruped](https://www.reddit.com/r/ludobots/wiki/pyrosim/quadruped)
 12. [The genetic algorithm](https://www.reddit.com/r/ludobots/wiki/pyrosim/geneticalgorithm)
 13. [Phototaxis](https://www.reddit.com/r/ludobots/wiki/pyrosim/phototaxis)
