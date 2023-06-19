@@ -1,5 +1,5 @@
 ## Ludobots Pyrosim Projects for Evolutionary Robotics Course at UVM -- CS206 Spring of 2017
-The contents presented herein comprise source code and work products generated in accordance with the Evolutionary Robotics course taught by Dr. Josh Bongard at the Univeristy of Vermont in Spring of 2017, as documented in his YouTube lectures [playlist](https://www.youtube.com/watch?v=4cHHj4l-xuI&list=PLAuiGdPEdw0hbF7EBoTUJbHaEjsxq6oer&t=0s).
+The contents presented herein comprise source code and work products generated in accordance with the Evolutionary Robotics course taught by Dr. Josh Bongard at the University of Vermont in Spring of 2017, as documented in his YouTube lectures [playlist](https://www.youtube.com/watch?v=4cHHj4l-xuI&list=PLAuiGdPEdw0hbF7EBoTUJbHaEjsxq6oer&t=0s).
 
 A Python 2.7 compatible **pyrosim** package was built and installed on an Ubuntu 18.04 platform from source obtained from the official Pyrosim GitHub [repository](https://github.com/ccappelle/pyrosim) identified [here](https://www.meclab.org/spinoffs). Since this version of **pyrosim** utilizes Open Dynamics Engine (ODE) instead of Bullet Physics, the source code presented for each project may not be relevant for CS206 courses taught after Spring of 2017.
 
