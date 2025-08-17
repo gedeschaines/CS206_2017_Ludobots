@@ -21,7 +21,7 @@ Ludobots Pyrosim project instructions for the CS206 course are provided on Reddi
 12. [The genetic algorithm](https://www.reddit.com/r/ludobots/wiki/pyrosim/geneticalgorithm)
 13. [Phototaxis](https://www.reddit.com/r/ludobots/wiki/pyrosim/phototaxis)
 
-The first seven Ludobots Pyrosim projects involve incrementally designing, developing and simulating the minimal virtual robot depicted in the figure below, then using the minimal robot to demonstrate and evaluate various neural network fitness evolution algorthms such as randoms search and hill climbing.
+The first seven Ludobots Pyrosim projects involve incrementally designing, developing and simulating the minimal virtual robot depicted in the figure below, then using the minimal robot to demonstrate and evaluate various neural network fitness evolution algorithms such as randoms search and hill climbing.
 
 <p align="center">
  <img src="./eng_drawing.png" width="460" height="332" alt="Engineering Diagram"/>
