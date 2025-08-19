@@ -1,0 +1,4 @@
+python==2.7.18
+pyrosim==0.1.1
+numpy~=1.16.6
+matplotlib~=2.2.3

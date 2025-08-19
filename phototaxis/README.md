@@ -1,8 +1,18 @@
 ## Phototaxis Quadruped Genetic Algorithm
 
-Engineering Diagram & ANN | Pyrosim Quadruped
-------------------------- | -----------------
-<img src="./eng_drawing_quad.png" width="485" height="416" alt="Quadruped Virtual Robot Engineering Diagram from https://imgur.com/kA4oznt"> | <img src="./quadruped.png" width="485" height="416" alt="Virtual Phototaxis Quadruped Robot"/>
+| Engineering Diagram & ANN                                                                                                                    | Pyrosim Quadruped                                                                              |
+|----------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| <img src="./eng_drawing_quad.png" width="485" height="416" alt="Quadruped Virtual Robot Engineering Diagram from https://imgur.com/kA4oznt"> | <img src="./quadruped.png" width="485" height="416" alt="Virtual Phototaxis Quadruped Robot"/> |
+
+### Pyrosim Phototaxis Coding Notes
+
+For steps 22-26 presented in the reddit/ludobots [Pyrosim: Phototaxis](https://www.reddit.com/r/ludobots/wiki/pyrosim/phototaxis/) post, the sample Python code "for loop" statements utilize the "range(...)" function to return an iterable sequence of integers subsequently used as indexes for Python sets self.p and envs\.envs. This is incorrect. Since self.p and envs\.envs are Python dictionary (dict) sets, the proper code for steps 22-26 is provided below.
+
+    22. for e in envs.envs:
+    23.     for i in self.p:
+    24.         self.p[i].Start_Evaluation(envs.envs[e],pp,pb)
+    25.     for i in self.p:
+    26.         self.p[i].Compute_Fitness()
 
 ### Pyrosim Project Executables
 
@@ -13,16 +23,16 @@ Engineering Diagram & ANN | Pyrosim Quadruped
 
 Maximum fitness plot for 2000 time steps and 200 generations of the virtual phototaxis quadruped robot utilizing the genetic algorithm is presented in the following figure.
 
-<p align="center">
+<p style="text-align:center">
  <img src="./phototaxisQuadGA_max_fitness.png" width="480" height="360" alt="Phototaxis Quadruped Genetic Algorithm Project - Maximum Fitness Plot"/>
 </p>
 
 Simulations of 2000 time steps for best fitness virtual phototaxis quadruped robot evolved over 200 generations with a genetic algorithm in four light source environments are presented in YouTube videos hyperlinked to the following images.
 
-**Light Source to the Front** | **Light Source to the Right**
------------------------------ | -----------------------------
-<a href="https://youtu.be/KI8k_nECe90"><img src="./phototaxisQuadGA_Front.jpg" alt="YouTube video of genetic algorithm evolved phototaxis quadruped robot reacting to light source to the front" width="450" height="300"></a> | <a href="https://youtu.be/MAgpncwxb2I"><img src="./phototaxisQuadGA_Right.jpg" alt="YouTube video of genetic algorithm evolved phototaxis quadruped robot reacting to light source to the right" width="450" height="300"></a>
+| **Light Source to the Front**                                                                                                                                                                                                    | **Light Source to the Right**                                                                                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <a href="https://youtu.be/KI8k_nECe90"><img src="./phototaxisQuadGA_Front.jpg" alt="YouTube video of genetic algorithm evolved phototaxis quadruped robot reacting to light source to the front" width="450" height="300"></a>   | <a href="https://youtu.be/MAgpncwxb2I"><img src="./phototaxisQuadGA_Right.jpg" alt="YouTube video of genetic algorithm evolved phototaxis quadruped robot reacting to light source to the right" width="450" height="300"></a> |
 
-**Light Source to the Back** | **Light Source to the Left**
----------------------------- | ----------------------------
-<a href="https://youtu.be/fgSBssf5JMg"><img src="./phototaxisQuadGA_Back.jpg" alt="YouTube video of genetic algorithm evolved phototaxis quadruped robot reacting to light source to the back" width="450" height="300"></a> | <a href="https://youtu.be/Sd6LiF_WxzE"><img src="./phototaxisQuadGA_Left.jpg" alt="YouTube video of genetic algorithm evolved phototaxis quadruped robot reacting to light source to the left" width="450" height="300"></a>
+| **Light Source to the Back**                                                                                                                                                                                                 | **Light Source to the Left**                                                                                                                                                                                                 |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <a href="https://youtu.be/fgSBssf5JMg"><img src="./phototaxisQuadGA_Back.jpg" alt="YouTube video of genetic algorithm evolved phototaxis quadruped robot reacting to light source to the back" width="450" height="300"></a> | <a href="https://youtu.be/Sd6LiF_WxzE"><img src="./phototaxisQuadGA_Left.jpg" alt="YouTube video of genetic algorithm evolved phototaxis quadruped robot reacting to light source to the left" width="450" height="300"></a> |
