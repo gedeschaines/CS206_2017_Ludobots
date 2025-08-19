@@ -16,7 +16,7 @@ show_best_individual = False
 save_best_individual = True
 random_seed = 87654321
 
-grng = [i for i in range(0,c.numGens)]
+grng = [i for i in range(0, c.numGens)]
 
 if random_seed is not None:
     np.random.seed(random_seed)
@@ -31,11 +31,11 @@ parents.Initialize()
 parents.Evaluate(envs, False, parent_blind_play)
 print 0,
 parents.Print()
-fitness[0,0:] = [parents.p[i].fitness for i in range(c.popSize)]
+fitness[0, 0:] = [parents.p[i].fitness for i in range(c.popSize)]
 
 # Simulate glim generations; saving fitness for each individual
 
-for g in range(1,c.numGens):
+for g in range(1, c.numGens):
     children = POPULATION(c.popSize)
     children.Fill_From(parents)
     children.Evaluate(envs, False, True)
@@ -76,7 +76,7 @@ panel.set_xlabel('Generation')
 panel.set_ylabel('Maximum Fitness')
 panel.set_xlim(0, c.numGens)
 panel.set_ylim(ymin, ymax)
-for p in range(0,c.popSize):
+for p in range(0, c.popSize):
     panel.plot(grng[0:], fitness[:,p], linestyle='solid', color=pcols[p], label=str(p))
     panel.plot([gmax[0,p],gmax[0,p]],[ymin,ymax], linestyle='dotted', color=pcols[p])
 panel.legend(loc='lower left', title='ID', frameon=False)

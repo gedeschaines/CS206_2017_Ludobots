@@ -18,7 +18,7 @@ class POPULATION:
         print
 
     def Initialize(self):
-        for i in  range(0,self.popSize):
+        for i in range(0, self.popSize):
             self.p[i] = INDIVIDUAL(i)
 
     def Evaluate(self, envs, pp=False, pb=True):
@@ -76,4 +76,3 @@ class POPULATION:
                 best_fitness = self.p[i].fitness 
                 best_p = self.p[i]
         return best_p
-    
