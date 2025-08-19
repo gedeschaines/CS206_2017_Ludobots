@@ -23,7 +23,7 @@ Ludobots Pyrosim project instructions for the CS206 course are provided on Reddi
 
 The first seven Ludobots Pyrosim projects involve incrementally designing, developing and simulating the minimal virtual robot depicted in the figure below, then using the minimal robot to demonstrate and evaluate various neural network fitness evolution algorithms such as randoms search and hill climbing.
 
-<p align="center">
+<p style="text-align:center">
  <img src="./eng_drawing.png" width="460" height="332" alt="Engineering Diagram"/>
 </p>
 
