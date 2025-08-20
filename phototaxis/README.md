@@ -23,7 +23,7 @@ For steps 22-26 presented in the reddit/ludobots [Pyrosim: Phototaxis](https://w
 
 Maximum fitness plot for 2000 time steps and 200 generations of the virtual phototaxis quadruped robot utilizing the genetic algorithm is presented in the following figure.
 
-<p style="text-align:center">
+<p align="center">
  <img src="./phototaxisQuadGA_max_fitness.png" width="480" height="360" alt="Phototaxis Quadruped Genetic Algorithm Project - Maximum Fitness Plot"/>
 </p>
 
