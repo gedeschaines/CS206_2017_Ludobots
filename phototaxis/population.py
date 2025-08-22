@@ -22,10 +22,10 @@ class POPULATION:
             self.p[i] = INDIVIDUAL(i)
 
     def Evaluate(self, envs, pp=False, pb=True):
-        for i in self.p:
+        for i in self.p.keys():
             self.p[i].fitness = 0.0
         for e in envs.envs.keys():
-            for i in self.p:
+            for i in self.p.keys():
                 self.p[i].Start_Evaluation(envs.envs[e], pp, pb)
             for i in self.p.keys():
                 self.p[i].Compute_Fitness()
