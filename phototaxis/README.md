@@ -6,12 +6,12 @@
 
 ### Pyrosim Phototaxis Coding Notes
 
-For steps 22-26 presented in the reddit/ludobots [Pyrosim: Phototaxis](https://www.reddit.com/r/ludobots/wiki/pyrosim/phototaxis/) post, the sample Python code "for loop" statements utilize the "range(...)" function to return an iterable sequence of integers subsequently used as indexes for Python sets self.p and envs\.envs. This is incorrect. Since self.p and envs\.envs are Python dictionary (dict) sets, the proper code for steps 22-26 is provided below.
+For steps 22-26 presented in the reddit/ludobots [Pyrosim: Phototaxis](https://www.reddit.com/r/ludobots/wiki/pyrosim/phototaxis/) post, the sample Python code "for loop" statements utilize the "range(...)" function to return an iterable sequence of integers subsequently used as indexes for Python sets self.p and envs\.envs. Since self.p and envs\.envs are Python dictionary (dict) sets, another implementation for steps 22-26 is provided below.
 
-    22. for e in envs.envs:
-    23.     for i in self.p:
+    22. for e in envs.envs.keys():
+    23.     for i in self.p.keys():
     24.         self.p[i].Start_Evaluation(envs.envs[e],pp,pb)
-    25.     for i in self.p:
+    25.     for i in self.p.keys():
     26.         self.p[i].Compute_Fitness()
 
 ### Pyrosim Project Executables
