@@ -13,7 +13,7 @@ If building for Ubuntu 24.04, the libgl1-mesa-glx package is no longer provided 
 
     $ sudo apt-get install build-essential libx11-dev xorg-dev libglu1-mesa-dev freeglut3-dev libglu1-mesa libglu1-mesa-dev libgl1 libglx-mesa0 libgl1-mesa-dev
 
-[Miniconda3](https://www.anaconda.com/docs/getting-started/miniconda/install#linux-2) was installed for WSL Ubuntu 20.04 (currently Python 3.8.18 & Conda 24.5.0) and WSL Ubuntu 24.04 (currently Python 3.12.3 & Conda 24.4.0), and conda utilized to create a virtual Python 2.7.18 environment in which to build/install/execute **pyrosim** and run the Ludobots Pyrosim projects provided in this repository. Additionally, **pyrosim** was successfully built, installed and executed with Python 2.7.18 installed in the WSL Ubuntu 20.04 distribution with the **apt** package manager (i.e., "sudo apt-get install python"), provided an appropriate pip version for Python 2 is installed as documented [here](https://askubuntu.com/questions/1317353/how-can-i-find-an-older-version-of-pip-that-works-with-python-2-7). 
+[Miniconda3](https://www.anaconda.com/docs/getting-started/miniconda/install#linux-2) was installed for WSL Ubuntu 20.04 (currently Python 3.8.18 & Conda 24.5.0) and WSL Ubuntu 24.04 (currently Python 3.12.3 & Conda 24.4.0), and conda utilized to create a Python 2.7.18 environment in which to build/install/execute **pyrosim** and run the Ludobots Pyrosim projects provided in this repository. Additionally, **pyrosim** was successfully built, installed and executed with Python 2.7.18 installed in the WSL Ubuntu 20.04 distribution with the **apt** package manager (i.e., "sudo apt-get install python"), provided an appropriate pip version for Python 2 is installed as documented [here](https://askubuntu.com/questions/1317353/how-can-i-find-an-older-version-of-pip-that-works-with-python-2-7). 
 
 ### Reddit links for Ludobots Pyrosim projects
 
@@ -62,6 +62,7 @@ See [DISCLAIMER](./DISCLAIMER)
 
 ### Notes
 
-1. Deliverable work products for most of the CS206 Ludobots Pyrosim projects include an engineering diagram depicting a notional robot design, and as such the free software diagramming tool [**Dia**](https://wiki.gnome.org/Apps(2f)Dia.html) was used to create engineering diagram PNG image 'eng_drawing.png' files exported from a single 'eng_drawing.dia' worksheet by utilizing **Dia** layering capabilities.
-2. For projects with screenshot or graph plot image work products, the associated program incorporates automatic generation of the image when possible.
-3. If present, refer to a project's README file for development and execution details not explicitly addressed in the Ludobots Pyrosim project instructions provided at the corresponding Reddit web page (see Reddit links section above).
+1. The rationale for providing Python 2 compatible CS206 2017 Ludobots Pyrosim projects source to be executed in a Python 2 environment is to preserve historical context, and allow simple means for specifying and enforcing a Python 3 compatibility requirement to restrict installation and utilization of this project's source code.
+2. Deliverable work products for most of the CS206 Ludobots Pyrosim projects include an engineering diagram depicting a notional robot design, and as such the free software diagramming tool [**Dia**](https://wiki.gnome.org/Apps(2f)Dia.html) was used to create engineering diagram PNG image 'eng_drawing.png' files exported from a single 'eng_drawing.dia' worksheet by utilizing **Dia** layering capabilities.
+3. For projects with screenshot or graph plot image work products, the associated program incorporates automatic generation of the image when possible.
+4. If present, refer to a project's README file for development and execution details not explicitly addressed in the Ludobots Pyrosim project instructions provided at the corresponding Reddit web page (see Reddit links section above).
