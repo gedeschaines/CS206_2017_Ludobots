@@ -8,7 +8,7 @@ channels:
 dependencies:
  - python=2.7.18
  - pyrosim=0.1.1=dev_0
- - pip=19.3.1
+ - pip=20.3.4
  - nose=1.3.7
  - numpy=1.16.6
  - matplotlib=2.2.3
