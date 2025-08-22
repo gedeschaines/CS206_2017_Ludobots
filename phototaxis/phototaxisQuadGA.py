@@ -9,6 +9,11 @@ from copy import deepcopy
 from random import seed
 import pickle
 import numpy as np
+# Try uncommenting following two statements if problems are encountered with
+# plotting, saving or showing the matplotlib.pyplot.figure when a matplotlib
+# default 'QtAgg' backend is used.
+##import matplotlib
+##matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 
 parent_blind_play = True
@@ -26,7 +31,7 @@ envs = ENVIRONMENTS()
 
 fitness = np.ndarray((c.numGens,c.popSize))
 
-parents = POPULATION(c.popSize)
+parents = POPULATION(c.popSize, randEnvsKeys=False)
 parents.Initialize()
 parents.Evaluate(envs, False, parent_blind_play)
 print 0,
@@ -36,11 +41,12 @@ fitness[0, 0:] = [parents.p[i].fitness for i in range(c.popSize)]
 # Simulate glim generations; saving fitness for each individual
 
 for g in range(1, c.numGens):
-    children = POPULATION(c.popSize)
+    children = POPULATION(c.popSize, randEnvsKeys=False)
     children.Fill_From(parents)
     children.Evaluate(envs, False, True)
-    print g,
-    children.Print()
+    if (g+1) % 10 == 0:
+        print g,
+        children.Print()
     parents.ReplaceWith(children)
     fitness[g, 0:] = [parents.p[i].fitness for i in range(c.popSize)]
 

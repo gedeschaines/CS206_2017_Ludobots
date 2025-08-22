@@ -8,10 +8,11 @@ import random
 
 class POPULATION:
     
-    def __init__(self, popSize):
+    def __init__(self, popSize, randEnvsKeys=False):
         self.popSize = popSize
         self.p = {}
-    
+        self.randEnvsKeys = randEnvsKeys
+
     def Print(self):
         for i in self.p:
             self.p[i].Print()
@@ -22,16 +23,19 @@ class POPULATION:
             self.p[i] = INDIVIDUAL(i)
 
     def Evaluate(self, envs, pp=False, pb=True):
+        envsKeys = envs.envs.keys()
+        if self.randEnvsKeys == True:
+            random.shuffle(envsKeys)
         for i in self.p.keys():
             self.p[i].fitness = 0.0
-        for e in envs.envs.keys():
+        for e in envsKeys:
             for i in self.p.keys():
                 self.p[i].Start_Evaluation(envs.envs[e], pp, pb)
             for i in self.p.keys():
                 self.p[i].Compute_Fitness()
         for i in self.p.keys():
             self.p[i].fitness = self.p[i].fitness/c.numEnvs
-            
+
     def Mutate(self):
         for i in self.p:
             self.p[i].Mutate()
