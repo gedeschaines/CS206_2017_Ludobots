@@ -15,7 +15,7 @@ If building for Ubuntu 24.04, the libgl1-mesa-glx package is no longer provided 
 
 [Miniconda3](https://www.anaconda.com/docs/getting-started/miniconda/install#linux-2) was installed for WSL Ubuntu 20.04 (currently Python 3.8.18 & Conda 24.5.0) and WSL Ubuntu 24.04 (currently Python 3.12.3 & Conda 24.4.0), and conda utilized to create a Python 2.7.18 environment in which to build/install/execute **pyrosim** and run the Ludobots Pyrosim projects provided in this repository. Additionally, **pyrosim** was successfully built, installed and executed with Python 2.7.18 installed in the WSL Ubuntu 20.04 distribution with the **apt** package manager (i.e., "sudo apt-get install python"), provided an appropriate pip version for Python 2 is installed as documented [here](https://askubuntu.com/questions/1317353/how-can-i-find-an-older-version-of-pip-that-works-with-python-2-7).
 
-**IMPORTANT: To avoid security risks, use the installed pip if its version is less than 20.3.4 to upgrade to version 20.3.4 by issuing the following command within the Python 2.7.18 environment before installing required packages.
+**IMPORTANT: To avoid security risks, use the installed pip if its version is less than 20.3.4 to upgrade to version 20.3.4 by issuing the following command within the Python 2.7.18 environment before installing required packages.**
 
     $ python2.7 -m pip install --upgrade pip==20.3.4
 
